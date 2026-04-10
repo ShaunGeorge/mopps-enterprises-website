@@ -1,0 +1,657 @@
+/* ============================================================
+   ABOUT.CSS — About Mopp's Enterprises Page
+   Matches site palette: black, white, #4dabf7 blue accents
+   ============================================================ */
+
+:root {
+    --blue:       #4dabf7;
+    --blue-dark:  #1c7ed6;
+    --black:      #000;
+    --charcoal:   #1a1a1a;
+    --grey-text:  #555;
+    --grey-light: #f5f5f5;
+    --off-white:  #fafafa;
+    --white:      #fff;
+    --transition: 0.3s ease;
+}
+
+/* ---- Base ---- */
+.about-page-body {
+    background: var(--white);
+    color: var(--charcoal);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-label {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--blue-dark);
+    margin-bottom: 0.75rem;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.about-hero {
+    padding: 7rem 2rem 5rem;
+    background: var(--white);
+    border-bottom: 1px solid #eee;
+}
+
+.about-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-hero-text h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--charcoal);
+    margin: 0.5rem 0 1.2rem;
+}
+
+.about-eyebrow {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--blue-dark);
+    border-left: 3px solid var(--blue);
+    padding-left: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--grey-text);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.about-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.about-hero-badges span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--grey-light);
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.45rem 0.9rem;
+}
+
+.about-hero-badges span i {
+    color: var(--blue-dark);
+}
+
+/* Hero image */
+.about-hero-image {
+    position: relative;
+}
+
+.about-hero-image img {
+    width: 100%;
+    display: block;
+    box-shadow: 8px 8px 30px rgba(0,0,0,0.1);
+}
+
+.hero-img-badge {
+    position: absolute;
+    bottom: -1.2rem;
+    left: -1.2rem;
+    background: var(--black);
+    color: var(--white);
+    padding: 1rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.badge-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.badge-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ============================================================
+   OUR STORY
+   ============================================================ */
+.about-story {
+    padding: 5rem 0;
+    background: var(--grey-light);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.story-text h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0.5rem 0 1.3rem;
+    line-height: 1.2;
+}
+
+.story-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.97rem;
+    color: var(--grey-text);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+/* Stats grid */
+.story-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-self: center;
+}
+
+.stat-card {
+    background: var(--white);
+    border-top: 3px solid var(--blue);
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.stat-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.stat-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: var(--grey-text);
+    font-weight: 500;
+}
+
+/* ============================================================
+   MISSION & VALUES
+   ============================================================ */
+.about-mission {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.mission-header {
+    margin-bottom: 3rem;
+}
+
+.mission-header h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0.4rem 0 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.mission-card {
+    background: var(--grey-light);
+    padding: 2rem 1.6rem;
+    border-bottom: 3px solid transparent;
+    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.mission-card:hover {
+    border-bottom-color: var(--blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+}
+
+.mission-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--black);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.mission-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0 0 0.7rem;
+}
+
+.mission-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    color: var(--grey-text);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ============================================================
+   WHAT WE DO
+   ============================================================ */
+.about-services {
+    padding: 5rem 0;
+    background: var(--black);
+}
+
+.services-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.services-text .section-label {
+    color: var(--blue);
+}
+
+.services-text h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0.4rem 0 1.2rem;
+    line-height: 1.2;
+}
+
+.services-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.97rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.about-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.85rem 1.8rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.about-cta-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid var(--blue);
+    padding: 1.2rem;
+    transition: background var(--transition);
+}
+
+.service-item:hover {
+    background: rgba(255,255,255,0.09);
+}
+
+.service-item-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.service-item strong {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.2rem;
+}
+
+.service-item p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   TEAM
+   ============================================================ */
+.about-team {
+    padding: 5rem 0;
+    background: var(--grey-light);
+}
+
+.team-header {
+    margin-bottom: 3rem;
+}
+
+.team-header h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0.4rem 0 0.6rem;
+}
+
+.team-intro {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--grey-text);
+    max-width: 560px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Team rows */
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform var(--transition), box-shadow var(--transition);
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.team-card.featured {
+    width: 260px;
+}
+
+.team-img-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #eee;
+}
+
+.team-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-img-wrap img {
+    transform: scale(1.05);
+}
+
+.team-info {
+    padding: 1rem;
+    border-top: 3px solid var(--blue);
+}
+
+.team-info h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0 0 0.2rem;
+}
+
+.team-role {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.team-bio {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--grey-text);
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ============================================================
+   CERTIFICATIONS
+   ============================================================ */
+.about-certs {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.certs-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.certs-text h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin: 0.4rem 0 1.2rem;
+    line-height: 1.2;
+}
+
+.certs-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.97rem;
+    color: var(--grey-text);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.cert-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cert-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    background: var(--grey-light);
+    padding: 0.7rem 1rem;
+    border-left: 3px solid var(--blue);
+}
+
+.cert-badge i {
+    color: var(--blue-dark);
+    font-size: 1.1rem;
+}
+
+/* CTA card */
+.cta-card {
+    background: var(--black);
+    color: var(--white);
+    padding: 3rem 2.5rem;
+}
+
+.cta-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.8rem;
+    color: var(--white);
+}
+
+.cta-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.97rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+}
+
+.cta-card .about-cta-btn {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.cta-card .about-cta-btn:hover {
+    background: var(--blue-dark);
+    color: var(--white);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .certs-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 5rem 1.5rem 3rem;
+    }
+
+    .about-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .about-hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-img-badge {
+        bottom: -1rem;
+        left: 0.5rem;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .story-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card,
+    .team-card.featured {
+        width: 160px;
+    }
+
+    .about-container {
+        padding: 0 1.2rem;
+    }
+
+    .about-story,
+    .about-mission,
+    .about-services,
+    .about-team,
+    .about-certs {
+        padding: 3rem 0;
+    }
+}
