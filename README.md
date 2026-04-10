@@ -1,0 +1,1 @@
+Mopp's Enterprises website — built from scratch using HTML, CSS and JavaScript, later modified using Claude Code.  Includes service pages, a charity page (Mopps Heart), about page, team section, contact form and full mobile responsiveness.
